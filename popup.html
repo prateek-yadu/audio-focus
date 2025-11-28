@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Audio Focus</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Audio Focus</h1>
+            <div id="status-indicator" class="status-badge">ACTIVE</div>
+        </header>
+
+        <div class="control-group">
+            <label for="global-toggle" class="label-text">
+                <span>Global Audio Mode</span>
+                <small>Hide visuals everywhere</small>
+            </label>
+            <label class="switch">
+                <input type="checkbox" id="global-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="control-group">
+            <label for="site-override" class="label-text">
+                <span>Whitelist This Video</span>
+                <small>Always show visuals here</small>
+            </label>
+            <label class="switch">
+                <input type="checkbox" id="site-override">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
